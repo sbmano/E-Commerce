@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Contact us-Redstore Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+	  <div class="navbar">
+	    <div class="logo">
+		<a href="index.html"><img src="images/logo.png" width="125px"></a>
+	    </div>
+	     <nav>
+	    	<ul id="menuitems">
+	    		<div class="menu-bar">
+			  <li><a href="index.html">Home</a></li>
+		     <li><a href="products.html">Products</a></li>
+		     <li><a href="about.html">About</a></li>
+		     <li><a href="contact.html">Contact</a></li>
+		     <li><a href="account.html">Account</a></li>
+		     </div>
+		   </ul>
+	    </nav>
+	    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+	    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div> 
+   </div>
+
+<!--------------contact page----------------->
+
+<div class="container1" >
+	<h1>Connect With Us</h1>
+	<p>We would love to respond to your queries and help you succeed. Feel
+	free to get in touch with us.</p>
+	<div class="contact-box">
+		<div class="contact-left">
+			<h3>Send your request</h3>
+			<form>
+				<div class="input-row">
+					<div class="input-group">
+						<label>Name</label>
+						<input type="text" class="input-box" placeholder="name" style="width:270px;">
+					</div>
+					<div class="input-group">
+						<label>Phone</label>
+						<input type="text" class="input-box" placeholder="+1 123-456-7890" style="width:270px;">
+					</div>
+				</div>
+				<div class="input-row">
+					<div class="input-group">
+						<label>Email</label>
+						<input type="email" class="input-box" placeholder="abc@gmail.com" style="width:270px;">
+					</div>
+					<div class="input-group">
+						<label>Subject</label>
+						<input type="text" class="input-box" placeholder="Product Demo" style="width:270px;">
+					</div>
+				</div>
+				<label>Message</label>
+				<textarea rows="5"  placeholder="Your Message"></textarea>
+				<button type="submit">SEND</button>
+			</form>
+		</div>
+		<div class="contact-right">
+			<h3>Reach Us</h3>
+			<table>
+				<tr>
+					<td class="info">Email</td>
+					<td class="info" style="text-align: left;">contactus@redstore.com</td>
+				</tr>
+				<tr>
+					<td class="info">Phone</td>
+					<td class="info" style="text-align: left;">+1 123 456 7890</td>
+				</tr>
+				<tr>
+					<td class="info">Address</td>
+					<td class="info address" style="text-align: left;">#123, ground floor, 8th cross
+						some layout,&nbsp; some road, ranchi,&nbsp;
+					pune-600166.</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+</div>
+<!--------------footer----------------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and Ios and mobile phone</p>
+				<div class="app-logo">
+					<img src="images/play-store.png">
+					<img src="images/app-store.png">
+
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="images/logo-white.png">
+				<p>Our Purpose it to sustainably Make the pleasure and
+				Benefits of sports Accessible to the Many.</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow us </h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter </li>
+					<li> Instagram</li>
+					<li> Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+			<p class="copyright">copyright 2020-Redstore private Ltd</p>
+	</div>
+</div>
+<!-------------------js for toggle menu------------->
+<script>
+	var menuitems = document.getElementById("menuitems");
+
+	menuitems.style.maxHeight = "0px";
+
+	function menutoggle() {
+		if (menuitems.style.maxHeight == "0px") 
+		{
+			menuitems.style.maxHeight = "200px";
+		}
+		else{
+			menuitems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>
